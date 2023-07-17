@@ -205,8 +205,9 @@ $(function() {
     
     var swiper = new Swiper('.swiper-container', {
         // Opcioni parametri za podešavanje
-        slidesPerView: 1, // Broj vidljivih slajdova
-        spaceBetween: 2000, // Rastojanje između slajdova (u pikselima)
+        slidesPerView: 1.13, // Broj vidljivih slajdova
+        spaceBetween: 10, // Rastojanje između slajdova (u pikselima)
+        direction: 'horizontal',
         loop: true, // Beskonačna petlja
         navigation: {
           nextEl: '.swiper-button-next', // Klasa za navigacionu strelicu sledeći slajd
