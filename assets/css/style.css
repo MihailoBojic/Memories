@@ -290,6 +290,14 @@ p {
   font-size: 44px;
   font-weight: 600;
 }
+.section_title p{
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section_title .title {
@@ -2031,6 +2039,16 @@ li{
     justify-content: center;
     text-align: center;
     align-items: center;
+    overflow-x: scroll;
+    
   }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  ::-webkit-scrollbar {
+  display: none;
+}
 
 
