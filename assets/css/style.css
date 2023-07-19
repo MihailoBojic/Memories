@@ -122,8 +122,6 @@ p {
   user-select: none;
   border: 0;
   padding: 0 40px;
-  font-size: 16px;
-  height: 50px;
   line-height: 50px;
   border-radius: 15px;
   color: #fff;
@@ -132,7 +130,13 @@ p {
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
   background-color: #3484FF;
+  margin-top:15px;
+  border-radius:30px; 
+  margin-left: 40%;
+  font-size: 22px; 
+  height: 70%;
 }
+
 
 .main-btn:hover {
   background-color: #fff;
@@ -2124,7 +2128,47 @@ li{
     padding: 10px;
   }
 }
+.slider_content .slider_title{
+  font-size: 65px;
+   font-weight: 500;
+   margin: 0;
+}
+@media (max-width: 480px){
+.slider_content .slider_title {
+    font-size: 45px;
+}
+}
+@media screen and (max-width: 480px) {
+  .slider_title {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo-image {
+    margin-left: 13%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_title .about-us {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  #my-col span{
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 
 
 
