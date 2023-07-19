@@ -2011,7 +2011,6 @@ p {
 
 #underline {
   position: relative;
-  color: white;
 }
 
 /* #underline::after {
@@ -2026,20 +2025,22 @@ left: -10px;
   /* border-color: #3484FF transparent transparent transparent;
   border-radius: 15%;
   border-bottom: 40px; */
-/* } */ 
+/* } */
 
-#underline::after {
+
+  #underline::after {
   content: "";
-  width: 100%;
-  height: 4.43px;
-  background-image: url(file:///C:/Users/Mihailo%20Bojic/Desktop/Vector%2035line.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
-  bottom: 0;
+  bottom: -5px; /* Podesite željeni razmak između teksta i podvlake */
   left: 0;
+  width: 110%; /* Širina podloge */
+  height: 5px; /* Visina podloge */
+  background-image: url(https://raw.githubusercontent.com/MihailoBojic/Memories/master/Vector%2035line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
 }
+
 
 
 li{
@@ -2065,15 +2066,17 @@ li{
 .swiper-wrapper {
   display: flex;
   flex-wrap: nowrap;
-}
+} 
 
-/* Uklonite prečke za klizanje (scrollbar) */
+ /* Uklonite prečke za klizanje (scrollbar) */
 .swiper-container::-webkit-scrollbar {
   display: none;
 }
 #my-cards{
   margin:16px 0px 0px;
   padding: 0px 8px;
+
+  
 }
 #card-id{
   color:#000;
