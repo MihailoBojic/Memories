@@ -205,21 +205,17 @@ $(function() {
     
     var swiper = new Swiper('.swiper-container', {
         // Opcioni parametri za podešavanje
-        slidesPerView: 1.13, // Broj vidljivih slajdova
-        spaceBetween: 10, // Rastojanje između slajdova (u pikselima)
+        slidesPerView: 2.5, // Broj vidljivih slajdova
+        spaceBetween: 30, // Rastojanje između slajdova (u pikselima)
         direction: 'horizontal',
-        loop: true, // Beskonačna petlja
+        loop: true, // Postavite loop na true za beskonačnu petlju
+        autoplay: {
+            delay: 2500, // Interval u milisekundama između prebacivanja slajdova
+          },
         navigation: {
           nextEl: '.swiper-button-next', // Klasa za navigacionu strelicu sledeći slajd
           prevEl: '.swiper-button-prev', // Klasa za navigacionu strelicu prethodni slajd
         },
+        observer: true,        
       });
-    
-
-    
-
-    
-
-    
-
 });
