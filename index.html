@@ -128,61 +128,16 @@
             </div> 
         </div>
 
-      <!--  <div id="home" class="header_slider">
-	  
-            <div class="single_slider  d-flex align-items-center" style="background-image: url(assets/images/background.png)">
-			
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12" style="text-align:center;">
-                            <div class="slider_content">
-                                <h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">Više od <span> milion</span></h2>
-								<h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.4s">potencijalnih korisnika</span></h2>
-								<p class="wow fadeInLeftBig" data-wow-duration="1.7s" data-wow-delay="0.6s">Više iskustava, više uspomena, bogatiji život. Velika scena za mali biznis.</p>
-                              
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>-->
-		<!--<div id="home"  class="single_slider" style="height:800px;">
-		<video autoplay muted loop id="myVideo">
-  <source src="video.mp4" type="video/mp4">
-</video>
-
-<div class="d-flex align-items-center" style="padding:200px;">
-			
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12" style="text-align:center;">
-                            <div class="slider_content">
-                                <h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">Više od <span> milion</span></h2>
-								<h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.4s">potencijalnih korisnika</span></h2>
-								<p class="wow fadeInLeftBig" data-wow-duration="1.7s" data-wow-delay="0.6s">Istaknite se iz mase i pridružite se brojnim avanturistima koji su već istražili čari Crne Gore uz našu mobilnu aplikaciju za ture.</p>
-                              
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-</div>-->
+     
 
 <div class="video-background-holder" id="glavna">
+
   <div class="video-background-overlay"></div>
- 
-   <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G9HNiAQoiYA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
--->
-
-<div class="video-container" >
-
- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <div class="video-container">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="promo.mp4" type="video/mp4">
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/G9HNiAQoiYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-    </video>
-</div>
+ </video>
+    </div>
  <div class="video-background-content container h-100" style="margin-top:100px;">
    <div class="container">
                     <div class="row">
@@ -195,12 +150,12 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+    </div> 
+ </div>
   </div>
-</div>
-
-
-
+  
+  <!-- <div class="video-container" style="position: relative;">
+    <div><iframe src="https://player.vimeo.com/video/846925655?h=b6b7693deb&autoplay=1&loop=1&controls=0&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
 
 
 
@@ -214,7 +169,26 @@
    top:0px;
  
 }
+/* .video-container {
+        position: relative;
+        padding-bottom:56.25%;
+        padding-top: 30px;
+        height: 70vh;
+        overflow: hidden;
+        margin-bottom: 50px;
+        
+     
+    }
 
+
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    } */
 
 .video-background-holder {
   position: relative;
@@ -224,6 +198,7 @@
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  color: white;
 }
 
 .video-background-holder video {
@@ -248,6 +223,7 @@
 
 .video-background-overlay {
   position: absolute;
+  color: #fff;
   top: 0;
   left: 0;
   height: 100%;
@@ -255,11 +231,8 @@
   background-color: black;
   opacity: 0.5;
   z-index: 1;
+  pointer-events: none; /* Onemogućavanje interakcije sa overlay-om */
 }
-
-
-
-
 
 .marginaslike {
  margin-left:-20px;
@@ -310,10 +283,10 @@
     </section>
 
 
-    <section id="onama" class="about_area pt-130 pb-130" style="background-color:#f7f7f7;">
+    <section id="onama" class="about_area pt-25 pb-130" style="background-color:#f7f7f7;">
         <div class="about_wrapper">
             
-            <div class="container">
+            <div class="container" >
                 <div class="row justify-content-end">
                     <div class="col-lg-12">
                         <div class="about_content">
@@ -642,8 +615,7 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
 
 </style>
 
-   
-   
+
    
    			<section id="testimonial_area" class="section_padding contact_area pt-120 pb-130">
 				<div class="container">
@@ -655,6 +627,7 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
                     </div>
                 </div>
             </div> <!-- row -->
+
             
             <div class="row row-cols-1 row-cols-md-2" id="my-cards" >
                 
@@ -668,10 +641,11 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
                     <div class="w3-center">
                         <h5>- Miško Leković -</h5>
                         <span>“Montenegro Memories je unaprijedio način na koji prezentujemo našu turističku ponudu. Kroz profesionalne video materijale, naša usluga dobija mnogo veću vidljivost i bolje se približava potencijalnim posjetiocima.”</span>									
-                        <p class="content">
+                     <p class="content">
                             - Vinarija Garnet -
                         </p>
                     </div>
+                    
                   </div>
                 </div>
             
@@ -739,15 +713,15 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
   <div class="video-background-overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="promo.mp4" type="video/mp4">
-    </video>
+    </video>[]
   <div class="video-background-content container h-100">
    <div class="container">
                      <div class="row">
                         <div class="col-lg-12 col-12" style="text-align:center;">
                             <div class="slider_content">
 								<a href="#glavna"><img src="assets/images/montenegro-memories_logotip-white.png" width=170vw height=120vw alt="logo"></a>
-                                <h1 class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">info@montenegromemories.me</span></h1>
-								<h1 class="slider_title wow fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.4s"><img src="assets/images/phone.png"/>&nbsp;+382 67 553 515 </span></h1>
+                                <h1 id="info-text"class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">info@montenegromemories.me</span></h1>
+								<h1 id="info-text"class="slider_title wow fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.4s"><img src="assets/images/phone.png"/>&nbsp;+382 67 553 515 </span></h1>
 								 <button class="end-btn" onclick="showDiv('crmWebToEntityForm')" data-wow-duration="1.7s" data-wow-delay="0.7s" style="margin-top:15px;border-radius:30px;">Pridruži se</button>
                                 <!-- Note :
 
@@ -1309,6 +1283,10 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
             });
     </script>
 	
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	
 	</script>

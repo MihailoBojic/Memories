@@ -123,7 +123,7 @@ p {
   border: 0;
   padding: 0 40px;
   line-height: 50px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -131,10 +131,12 @@ p {
   transition: all 0.4s ease-out 0s;
   background-color: #3484FF;
   margin-top:15px;
+  margin-right: 10%;
   border-radius:30px; 
   margin-left: 40%;
   font-size: 22px; 
   height: 70%;
+  
 }
 .end-btn{
   display: inline-block;
@@ -149,7 +151,7 @@ p {
   border: 0;
   padding: 0 40px;
   line-height: 50px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -736,7 +738,7 @@ p {
 }
 
 .navbar-nav .nav-item a {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
   color: #fff;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -745,6 +747,8 @@ p {
   position: relative;
   text-align: center;
   white-space: nowrap;
+  font-family: Poppins;
+  text-decoration: none;
 
   
 }
@@ -780,6 +784,7 @@ p {
     color: #222;
   }
 }
+
 
 @media (max-width: 767px) {
   .navbar-nav .nav-item a {
@@ -1066,6 +1071,12 @@ p {
 @media (max-width: 767px) {
   .about_content {
     margin-top: 45px;
+  }
+}
+@media (max-width: 1200) {
+  .nav-item.main-btn{
+    padding: 0px 5px;
+    margin-left: 13%;
   }
 }
 
@@ -2025,6 +2036,7 @@ p {
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+
   display: none;
 }
 
@@ -2180,6 +2192,7 @@ li{
     margin-left: 13%;
   }
 }
+
 @media screen and (max-width: 480px) {
   .section_title .about-us {
     font-size: 16px;
@@ -2194,5 +2207,17 @@ li{
   }
 }
 
+.logo-image{
 
+    image-rendering: crisp-edges; 
+    max-width: 100%;
+    height: auto;
 
+}
+@media screen and (max-width: 480px) {
+  #info-text{
+   font-size: 24px;
+   margin-top: 30px;
+ 
+  }
+}
