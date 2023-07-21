@@ -203,7 +203,7 @@ $(function() {
     
 
     
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-1', {
         // Opcioni parametri za podešavanje
         slidesPerView: 2.5, // Broj vidljivih slajdova
         spaceBetween: 30, // Rastojanje između slajdova (u pikselima)
@@ -218,4 +218,31 @@ $(function() {
         },
         observer: true,        
       });
+    
+      
+        var swiper2 = new Swiper(".swiper-2", {
+          // Dodajte opciju za različite širine ekrana
+          breakpoints: {
+            // Kada je širina ekrana veća ili jednaka 768px (veliki ekrani), prikazujte 2 kartice
+            768: {
+              slidesPerView: 2,
+            },
+            // Kada je širina ekrana manja od 768px (mobilni uređaji), prikazujte samo 1 karticu
+            0: {
+              slidesPerView: 1,
+            },
+          },
+          // Beskonačno pomjeranje za Swiper-2
+          loop: true,
+          // Dodajte autoplay opciju za automatsko pomjeranje kartica
+          autoplay: {
+            delay: 3000, // Vrijeme prikaza svake kartice (3 sekunde)
+            disableOnInteraction: false, // Omogućava automatsko pomjeranje čak i nakon interakcije korisnika
+          },
+          // Dodajte paginaciju za Swiper-2 (opciono)
+          pagination: {
+            el: ".swiper-pagination-2",
+          },
+        });
+      
 });
