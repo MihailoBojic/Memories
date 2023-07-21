@@ -735,6 +735,8 @@ p {
 
 .navbar-nav .nav-item {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-nav .nav-item a {
@@ -2057,7 +2059,7 @@ p {
   left: 0;
   width: 110%; /* Širina podloge */
   height: 5px; /* Visina podloge */
-  background-image: url(https://raw.githubusercontent.com/MihailoBojic/Memories/master/Vector%2035line.svg);
+  background-image: url(https://raw.githubusercontent.com/MihailoBojic/Memories/master/assets/images/Vector35line.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -2168,6 +2170,16 @@ li{
     display: block;
   }
 }
+@media screen and (max-width: 767px) {
+  .main-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-left: 10%;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
   .logo-image {
     margin-left: 13%;
@@ -2202,10 +2214,21 @@ li{
     height: auto;
 
 }
+
+@media screen and (max-width: 767px) {
+  #info-text{
+   font-size: 24px;
+   margin-top: 30px;
+ 
+  }
+}
 @media screen and (max-width: 480px) {
   #info-text{
    font-size: 24px;
    margin-top: 30px;
  
   }
+}
+.footer_widget{
+  line-height: 20px;
 }

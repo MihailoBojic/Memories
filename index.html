@@ -85,9 +85,10 @@
   background:transparent;
   z-index: 99;
   padding:20px;
+  margin-left: 0%;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;" >
-            <div class="container">
+            <div class="container d-flex justify-content-center">
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
@@ -127,57 +128,19 @@
                 </div>
             </div> 
         </div>
-
-      <!--  <div id="home" class="header_slider">
-	  
-            <div class="single_slider  d-flex align-items-center" style="background-image: url(assets/images/background.png)">
-			
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12" style="text-align:center;">
-                            <div class="slider_content">
-                                <h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">Više od <span> milion</span></h2>
-								<h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.4s">potencijalnih korisnika</span></h2>
-								<p class="wow fadeInLeftBig" data-wow-duration="1.7s" data-wow-delay="0.6s">Više iskustava, više uspomena, bogatiji život. Velika scena za mali biznis.</p>
-                              
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>-->
-		<!--<div id="home"  class="single_slider" style="height:800px;">
-		<video autoplay muted loop id="myVideo">
-  <source src="video.mp4" type="video/mp4">
-</video>
-
-<div class="d-flex align-items-center" style="padding:200px;">
-			
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12" style="text-align:center;">
-                            <div class="slider_content">
-                                <h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">Više od <span> milion</span></h2>
-								<h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.4s">potencijalnih korisnika</span></h2>
-								<p class="wow fadeInLeftBig" data-wow-duration="1.7s" data-wow-delay="0.6s">Istaknite se iz mase i pridružite se brojnim avanturistima koji su već istražili čari Crne Gore uz našu mobilnu aplikaciju za ture.</p>
-                              
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-</div>-->
-
 <div class="video-background-holder" id="glavna">
-
   <div class="video-background-overlay"></div>
-    <div class="video-container">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+ 
+   <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G9HNiAQoiYA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+-->
+
+<div class="video-container" >
+
+ <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="promo.mp4" type="video/mp4">
- </video>
-    </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/G9HNiAQoiYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </video>
+</div>
  <div class="video-background-content container h-100" style="margin-top:100px;">
    <div class="container">
                     <div class="row">
@@ -195,11 +158,6 @@
 </div>
 
 
-
-
-
-
-
 <style>
 
 
@@ -209,26 +167,7 @@
    top:0px;
  
 }
-/* .video-container {
-        position: relative;
-        padding-bottom:56.25%;
-        padding-top: 30px;
-        height: 70vh;
-        overflow: hidden;
-        margin-bottom: 50px;
-        
-     
-    }
 
-
-
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    } */
 
 .video-background-holder {
   position: relative;
@@ -238,7 +177,6 @@
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-  color: white;
 }
 
 .video-background-holder video {
@@ -263,7 +201,6 @@
 
 .video-background-overlay {
   position: absolute;
-  color: #fff;
   top: 0;
   left: 0;
   height: 100%;
@@ -271,8 +208,11 @@
   background-color: black;
   opacity: 0.5;
   z-index: 1;
-  pointer-events: none; /* Onemogućavanje interakcije sa overlay-om */
 }
+
+
+
+
 
 .marginaslike {
  margin-left:-20px;
@@ -319,10 +259,10 @@
     </section>
 
 
-    <section id="onama" class="about_area pt-25 pb-130" style="background-color:#f7f7f7;">
+    <section id="onama" class="about_area pt-130 pb-130" style="background-color:#f7f7f7;">
         <div class="about_wrapper">
             
-            <div class="container" >
+            <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-lg-12">
                         <div class="about_content">
@@ -497,7 +437,7 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: -40px;
+	top: -10px;
 	left: 0;
 	bottom: 0;
 	margin: 0 auto;
@@ -520,6 +460,13 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
                 margin-bottom: 20px;
             }
             }
+
+            @media (max-width: 600px) {
+            #my-col.img-area span{
+               font-size: 20px;
+            }
+            }
+
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
@@ -574,7 +521,8 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
 
 </style>
 
-
+   
+   
    
    			<section id="testimonial_area" class="section_padding contact_area pt-100 pb-130">
 				 <div class="container">
@@ -584,8 +532,8 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
                         <h1 class="title">Recenzije partnera</h1>
                         
                     </div>
-                </div>
-            </div> <!-- row -->
+                 </div>
+                   </div>  
             
                    <div class="row " id="my-cards" >
                 
@@ -607,21 +555,41 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
                 </div> 
             
                 
-                <div class="col" id="my-col">
-                    <!-- <div class="box-area item" style="border-radius:20px; height: 32vw; width: 35vw;"></div> -->
-                  <div class="w3-card w3-container w3-center" style="min-height:460px; border-radius:50px;">
+                 <div class="col" id="my-col">
+                      <div class="box-area item" style="border-radius:20px; height: 32vw; width: 35vw;"></div> --> 
+                  <!-- <div class="w3-card w3-container w3-center" style="min-height:460px; border-radius: 50px;">
                     <div class="img-area">
-                        <img src="assets/images/misko.png" alt="">
-                    </div>
-                    
+                        <img src="assets/images/ivona.png" alt="">
+                    </div>	
                     <div class="w3-center">
-                        <h5>- Miško Leković -</h5>
-                        <span>“Montenegro Memories je unaprijedio način na koji prezentujemo našu turističku ponudu. Kroz profesionalne video materijale, naša usluga dobija mnogo veću vidljivost i bolje se približava potencijalnim posjetiocima.”</span>									
-                        <p class="content">
-                            - Vinarija Garnet -
-                        </p>
+                        <h5>-Ivona Dabović -</h5>
+									<span>Aplikacija Montenegro Memories je donijela revoluciju u našem poslovanju. Osim što pruža mogućnost profesionalne prezentacije naše ponude, ova platforma nam pomaže da bolje razumijemo potrebe naših posjetilaca i prilagodimo im se.</span>									
+									<p class="content">
+										-Eagle boat, krstarenje Skadarskim jezerom-
+									</p>
+								</div>
                     </div>
-                  </div>
+                  </div>  --> 
+
+                  <div class="swiper-container swiper-2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="col" id="my-col">
+                        
+                     <div class="w3-card w3-container w3-center" style="min-height:460px; border-radius:50px;">
+                       <div class="img-area">
+                           <img src="assets/images/misko.png" alt="">
+                       </div>
+                       
+                       <div class="w3-center">
+                           <h5>- Miško Leković -</h5>
+                           <span>“Montenegro Memories je unaprijedio način na koji prezentujemo našu turističku ponudu. Kroz profesionalne video materijale, naša usluga dobija mnogo veću vidljivost i bolje se približava potencijalnim posjetiocima.”</span>									
+                           <p class="content">
+                               - Vinarija Garnet -
+                           </p>
+                       </div>
+                     </div>
+                   </div> 
                 </div>
                                                 
                                                 <!-- Kartica 2 -->
@@ -748,7 +716,7 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
   <div class="video-background-overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="promo.mp4" type="video/mp4">
-    </video>[]
+    </video>
   <div class="video-background-content container h-100">
    <div class="container">
                      <div class="row">
@@ -1318,10 +1286,6 @@ Lokalni biznisi se ne priključuju samo mreži, već revoluciji koja gradi <span
             });
     </script>
 	
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	
 	</script>
